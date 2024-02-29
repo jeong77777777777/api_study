@@ -1,0 +1,104 @@
+.main {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  padding: 0.75rem 0.375rem;
+}
+
+.main .category {
+  width: 100%;
+  height: auto;
+}
+
+.category form select {
+  width: 130px;
+  height: 30px;
+  margin-left: 1.375rem;
+  font-size: 16px;
+  color: black;
+}
+
+.event-list {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 1rem;
+}
+
+.event-list p {
+  font-size: 14px;
+}
+.img-box {
+  text-align: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.375rem;
+  padding: 0.375rem;
+}
+
+.img-box img {
+  width: 100%;
+  height: 200px;
+  /* background: #ddd; */
+}
+
+.page-numbers {
+  width: 80%;
+  height: 1.5rem;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.info-list p {
+  margin-bottom: 0.3rem;
+}
+
+.info-list .title {
+  font-weight: bold;
+  width: 153px;
+  height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-list .time,
+.info-lisft .fee {
+  font-size: 12px;
+}
+
+.info-list .time {
+  width: 153px;
+  height: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page {
+  margin: 0 0 2rem 0;
+  /* border: 1px solid purple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 1.5rem;
+  font-size: 16px;
+
+  color: black;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
