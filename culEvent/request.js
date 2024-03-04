@@ -39,8 +39,11 @@ async function getProducts(pages, codename) {
     eventIdx.forEach((event) => {
       // console.log(event);
       eventData = data.culturalEventInfo.row[event];
+      console.log(eventData);
 
-      const mainEventEl = `<div class="event-box">
+      const mainEventEl = `
+      <a href="detail.html?TITLE=${eventData.TITLE}" alt={}>
+      <div class="event-box">
       <div class="img-box">
       <img src=${eventData.MAIN_IMG}>
       </div>
@@ -48,7 +51,7 @@ async function getProducts(pages, codename) {
       <p class="title">${eventData.TITLE}</p>
       <p class="time">${eventData.PLACE}</p>
       <p class="fee">${eventData.IS_FREE}</p>
-         </div></div>`;
+         </div></div></a>`;
 
       eventBoxWrapper.insertAdjacentHTML('beforeend', mainEventEl);
     });
